@@ -1,80 +1,85 @@
-:root {
-  --primary-color: #e9c4e9;
-  --secondary-color:#264653;
-  --accent1-color: #055a05;
-  --accent2-color:#f4a261;
-  --heading-font: "Time New Roman", "Georgia" serif;
-  --body-font: Ariel, Helvetica , san-serif;
-
-}
 
 header {
-display: grid;
- grid-template-columns: 120px 1fr 1fr;
- align-items: center;
-
- header nav { 
-	display: flex;
-}
-  
-header nav ul {
-	list-style: none;
-}
- 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
 }
 
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
 
-* {
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
     padding: 0;
-    margin:0 ;
-    box-sizing: border-box;
 }
 
-	body {
-	  font-family: var(--body-font);
-	  color: var(--accent1-color);
- }
-
-	header, main, footer {
-      width: 840px;
-	  margin: 0 auto;
-}	
-
-	h1, h2 {
-	  font-family: var(--heading-font);
-      color: var(--primary-color);
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
 }
 
-	nav, p, section, article {
-	  margin: 16px;
-      padding: 8px;
+.history {
+    padding: 2em;
 }
 
-    .socialmedia a {
-        text-decoration: none;
+.history img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    
 }
 
-	.hero {
-	  position: relative;
-}
-.hero img {
-	display: block;
-	width: 100%;
-	height: auto;
-  }
-
-  	h1 {
-	  position: absolute;
-	  top: 20px;
-	  width: 100%;
-	  padding: 16px;
-	  text-align: center;
-	  opacity: 0.7;
-	  background-color: var(--accent1-color);
-	  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
 }
 
-	.hero article img {
-	  float: right;
-	  width: 125px;
+.adventures figure {
+    margin: 1em;
 }
+
+.adventures img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.adventures figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+
