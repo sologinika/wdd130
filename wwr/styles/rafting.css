@@ -1,0 +1,85 @@
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.history {
+    padding: 2em;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    
+}
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.adventures figure {
+    margin: 1em;
+}
+
+.adventures img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.adventures figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+
