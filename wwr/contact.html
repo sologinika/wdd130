@@ -3,85 +3,150 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description" content="Alagbaoso Solomon Ginikachukwu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Solo's White Water Rafting Company. Contact us for reservations, inquiries, or
-    feedback.">
-    <title>Contact Us | Solo's White Water Rafting Company </title>
-
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/water-rafting.png" alt="water-rafting">
-        <nav>
-            <ul>
-                <ul><a href="index.html">Home</a></ul>
-                <ul><a href="about.html">About Us</a></ul>
-                <ul><a href="trip.html">Trips</a></ul>
-                <ul><a href="contact.html">Contact us</a></ul>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="header-container">
+            <img src="images/water-rafting.png" alt="Rafting Company Logo" class="logo">
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <section>
-            <h2>Company Information</h2>
-            <p>12 Wetheral Road, Imo State, Nigeria</p>
-            <p>Phone: +2347067396414</p>
-            <p>Email: [info@solosrafting.com](mailto:info@solosrafting.com)</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509369!2d-122.4194156846813!3d37.77492927975969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1c2c2c2c2c%3A0x2c2c2c2c2c2c2c2c!2s1234+River+Rd%2C+Kansas%2C+USA!5e0!3m2!1sen!2sng!4v1643723900123!5m2!1sen!2sng"
-                width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+
+    <main class="contact-page">
+
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Let’s plan your next adventure.</p>
         </section>
-        <section>
+
+        <!-- CONTACT INFO -->
+        <section class="contact-info">
+            <div class="info-text">
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 123 Whetheral Road Owerri, Imo-State, Nigeria</p>
+                <p><strong>Phone:</strong> +2347067396414</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094474!2d144.95373531531876!3d-37.816279742021695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1fdf7b7%3A0x5045675218ce7e33!2sRiver!5e0!3m2!1sen!2sus!4v123456789"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
             <h2>Meet Our Team</h2>
-            <img src="images/ceo.jpg" alt="Employee 1" width="100" height="80">
-            <p>John Doe, CEO</p>
-            <img src="images/staff-2.jpg" alt="Employee 2" width="100" height="80">
-            <p>Jane Smith, Operations Manager</p>
-            <img src="images/staff-1.jpg" alt="Employee 3" width="100" height="80">
-            <p>Bob Johnson, Guide</p>
+
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/ceo.jpg" alt="Lead Guide">
+                    <figcaption>
+                        <strong>James Carter</strong><br>
+                        Lead River Guide
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/staff1.jpg" alt="Safety Officer">
+                    <figcaption>
+                        <strong>Sarah Lopez</strong><br>
+                        Safety & Training Officer
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/staff2.jpg" alt="Operations Manager">
+                    <figcaption>
+                        <strong>Michael Reed</strong><br>
+                        Operations Manager
+                    </figcaption>
+                </figure>
+
+            </div>
         </section>
-        <section>
-            <h2>Get in Touch</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="purpose">Purpose:</label>
-                <input type="radio" id="general" name="purpose" value="General Inquiry">
-                <label for="general">General Inquiry</label>
-                <input type="radio" id="reservation" name="purpose" value="Reservation">
-                <label for="reservation">Reservation</label>
-                <input type="radio" id="question" name="purpose" value="Question">
-                <label for="question">Question</label>
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                <label for="suggestion">Website Suggestion</label><br><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea><br><br>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
-                <button type="submit">Send Message</button>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Purpose of Message</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+
             </form>
         </section>
+
     </main>
-    <footer>
-        <p> &copy; 2026 Alagbaoso Solomon Ginikachukwu 🌴 Imo State, Nigeria </p>
-        <nav class="Social media">
-            <a href="https//facebook.com">
-                <img src="images/facebook.svg" alt="facebook icon">
-            </a>
-            <a href="https//linkedin.com">
-                <img src="images/linkedin.svg" alt="linkedin icon">
-            </a>
-            <a href="https//whatsapp.com">
-                <img src="images/whatsapp.svg" alt="whatsapp icon">
-            </a>
-        </nav>
+
+    <footer class="site-footer">
+        <p>© 2026 Solo's White Water Rafting Company | All Rights Reserved</p>
+
+        <div class="social-links">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/whatsapp.svg" alt="Whatsapp"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
     </footer>
+
 </body>
 
 </html>
