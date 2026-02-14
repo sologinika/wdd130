@@ -3,98 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Learn about our white water rafting company, our history, mission, and passion for unforgettable river adventures.">
-    <meta name="author" content="Alagbaoso Solomon Ginikachukwu">
+    <title>About Us | White Water Rafting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us |Solo's White Water Rafting</title>
-
-    <!-- CSS Link -->
+    <meta name="description" content="Learn more about our rafting adventures, history, and experiences.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="images/water-rafting.png" alt="White Water Rafting Company Logo">
+    <header class="site-header">
+        <div class="header-container">
+            <img src="images/water-rafting.png" alt="Rafting Company Logo" class="logo">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <!-- HERO SECTION -->
-        <div class="hero">
-            <img src="images/hero-image.png" alt="hero-image">
-
-            <h1>Solo's White Water Rafting Co.</h1>
-
-            <article>
-                <img src="images/happy-rafters.jpg" alt="Happy rafters">
-
-                <p>
-                    At Solo's White Water Rafting Co., our mission is to deliver thrilling, safe, and unforgettable
-                    river
-                    adventures.
-                    We believe in teamwork, courage, respect for nature, and creating lifelong memories through outdoor
-                    exploration.
-                </p>
-            </article>
-        </div>
+        <section class="hero">
+            <h1>About Solo's White Water Rafting </h1>
+            <p>Adventure. Nature. Experience. Passion.</p>
+        </section>
 
         <!-- HISTORY SECTION -->
-        <section>
-            <h2>History</h2>
-            <p>
-                Solomon's White Water Rafting was founded in 2024 by Solomon Alagbaoso Ginikachukwu, a passionate
-                adventurer and water enthusiast.
-                Solomon grew up near the Imo River in Nigeria, where he developed a love for rafting and exploring the
-                great outdoors.
-                After completing his degree in recreation management, Solomon decided to turn his passion into a
-                business. He started
-                with just one raft and a small team of guides, offering basic rafting trips on the Imo River.
+        <section class="history">
+            <h2>Our History</h2>
 
-                Growth and Expansion (2024-2025)
+            <div class="history-grid">
+                <p>
+                    Founded by passionate explorers, our rafting company began with one mission:
+                    to connect people with nature through unforgettable river experiences.
+                    We believe in safety, sustainability, and adventure.
+                </p>
 
-                As the business grew, Solomon expanded his operations to include more rafts, guides, and equipment. He
-                also began
-                offering more advanced courses and trips, including multi-day excursions on the Niger River. Solomon's
-                reputation for
-                safety, expertise, and customer service grew, and the company became a favorite among adventure-seekers
-                in Nigeria.
+                <img src="images/hero-image.png" alt="hero-image">
 
-            </p>
+                <p>
+                    Solomon's White Water Rafting was founded in 1990 by Solomon Alagbaoso, a passionate adventurer and
+                    water enthusiast.
+                    Solomon grew up near the Imo River in Nigeria, where he developed a love for rafting and exploring
+                    the great outdoors.
+                    After completing his degree in recreation management, Solomon decided to turn his passion into a
+                    business. He started
+                    with just one raft and a small team of guides, offering basic rafting trips on the Imo River.
+                </p>
+            </div>
         </section>
-        <!-- ADVENTURE SECTION -->
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <!-- Images will be added in the next assignment -->
+
+        <!-- ADVENTURES SECTION -->
+        <section class="adventures">
+            <h2>Adventure Awaits You</h2>
+
+            <div class="adventure-gallery">
+
+                <figure>
+                    <img src="images/adventure1.png" alt="Imo-River by Umuna bridge">
+                    <figcaption>Imo-River by Umuna bridge</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure2.png" alt="Imo-River by Owerrinta">
+                    <figcaption>Imo-River by Owerrinta</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure3.png" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/adventure4.png" alt="Thunder Run Rapids">
+                    <figcaption>Thunder Run</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/image.png" alt="River Explorer Trip">
+                    <figcaption>River Explorer</figcaption>
+                </figure>
+
+            </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Solo's White Water Rafting Co. | Solomon Ginikachukwu</p>
+    <footer class="site-footer">
+        <p>© 2026 Solo's White Water Rafting Company | All Rights Reserved</p>
 
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook Icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram Icon">
-            </a>
-        </nav>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
     </footer>
 
 </body>

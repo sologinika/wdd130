@@ -1,134 +1,173 @@
-:root {
-  --primary-color: #0b5d1e;     /* deep green */
-  --secondary-color: #f4a261;   /* sand */
-  --accent1-color: #1b3a4b;     /* deep blue */
-  --accent2-color: #e9c46a;     /* gold */
-  --heading-font: "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
-   }
+/* =========================
+   GLOBAL STYLES
+========================= */
 
-   * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #222;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* =========================
+   HEADER (GRID)
+========================= */
+
+.site-header {
+  background-color: #0b3c5d;
+  padding: 1rem 0;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-header {
-  background-color: var(--primary-color);
-  display: flex;
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 150px 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px;
+  padding: 0 1rem;
 }
 
-
-header img {
+.logo {
   width: 120px;
 }
 
-nav ul {
-  list-style: none;
+/* =========================
+   NAV (FLEX)
+========================= */
+
+.main-nav {
   display: flex;
-  gap: 20px;
-   }
+  justify-content: flex-end;
+  gap: 2rem;
+}
 
-   nav a {
+.main-nav a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  color: var(--accent2-color);
+.main-nav a:hover {
+  color: #f4d35e;
 }
+
+.main-nav .active {
+  border-bottom: 2px solid #f4d35e;
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/hero.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: #ffffff;
-  opacity: 0.85;
+  font-size: 3rem;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  right: 30px;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 16px;
+/* =========================
+   HISTORY SECTION
+========================= */
+
+.history {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.history-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.history-grid img {
   border-radius: 8px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+/* =========================
+   ADVENTURES SECTION
+========================= */
+
+.adventures {
+  background: #eaeaea;
+  padding: 3rem 1rem;
 }
 
-section {
-  background-color: #ffffff;
-  border-radius: 6px;
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: white;
+.adventures h2 {
   text-align: center;
-  padding: 16px;
+  margin-bottom: 2rem;
 }
 
-footer p {
-  margin-bottom: 10px;
-}
-
-.socialmedia {
+.adventure-gallery {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
+.adventure-gallery figure {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
 }
 
-.socialmedia img {
-  width: 28px;
+.adventure-gallery img {
+  height: 200px;
+  object-fit: cover;
 }
 
+.adventure-gallery figcaption {
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: #0b3c5d;
+  color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  background: #0b3c5d;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links img {
+  width: 30px;
+}
