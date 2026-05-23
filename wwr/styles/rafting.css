@@ -1,516 +1,138 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent1-color: #a8dadc;
+    --accent2-color: #f1faee;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
 
+/* universal selector */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* body */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #222;
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 
-img {
-  max-width: 100%;
-  display: block;
+/* page width */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-/* =========================
-   HEADER (GRID)
-========================= */
-
-.site-header {
-  background-color: #0b3c5d;
-  padding: 1rem 0;
+/* header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
 }
 
-.header-container {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  padding: 0 1rem;
+header img {
+    width: 100px;
 }
 
-.logo {
-  width: 120px;
-}
-
-/* =========================
-   NAV (FLEX)
-========================= */
-
-.main-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.main-nav a:hover {
-  color: #f4d35e;
-}
-
-.main-nav .active {
-  border-bottom: 2px solid #f4d35e;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/hero.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 5rem 1rem;
-  position: relative;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  position: absolute;
-}
-
-/* =========================
-   HISTORY SECTION
-========================= */
-
-.history {
-  background: #fff;
-  padding: 3rem 1rem;
-}
-
-.history h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.history-grid {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-}
-
-.history-grid img {
-  border-radius: 8px;
-}
-
-/* =========================
-   ADVENTURES SECTION
-========================= */
-
-.adventures {
-  background: #eaeaea;
-  padding: 3rem 1rem;
-}
-
-.adventures h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.adventure-gallery {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  gap: 1rem;
-}
-
-.adventure-gallery figure {
-  flex: 1;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.adventure-gallery img {
-  height: 200px;
-  object-fit: cover;
-}
-
-.adventure-gallery figcaption {
-  padding: 0.5rem;
-  font-weight: bold;
-  background-color: #0b3c5d;
-  color: white;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.site-footer {
-  background: #0b3c5d;
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-links img {
-  width: 30px;
-}
-
-/* CONTACT FORM */
-
-.contact-form-section {
-  background: #eaeaea;
-  padding: 3rem 1rem;
-}
-
-.contact-form-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-
-.form-group label,
-legend {
-  font-weight: bold;
-  margin-bottom: 0.3rem;
-}
-
-input, textarea {
-  padding: 0.6rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-fieldset {
-  border: none;
-  margin-bottom: 1rem;
-}
-
-fieldset label {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-weight: normal;
-}
-
-
-.checkbox-group {
-  flex-direction: row;
-  align-items: center;
-}
-
-.submit-btn {
-  background-color: #0b3c5d;
-  color: white;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.submit-btn:hover {
-  background-color: #06293f;
-}
-
-/* =========================
-   HOME PAGE
-========================= */
-
-.home-hero {
-  position: absolute;
-}
-
-.home-hero img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  background: rgba(0,0,0,0.6);
-  padding: 1rem 2rem;
-  border-radius: 6px;
-}
-
-.newsletter {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #fff;
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.newsletter-form input {
-  padding: 0.6rem;
-  width: 200px;
-}
-
-.newsletter-form button {
-  background: #0b3c5d;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  cursor: pointer;
-}
-
-.home-cta {
-  text-align: center;
-  background: #eaeaea;
-  padding: 3rem 1rem;
-}
-
-.cta-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #0b3c5d;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.home-grid {
-  max-width: 1100px;
-  margin: auto;
-  padding: 3rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.grid-item img {
-  border-radius: 8px;
-}
-
-/* =========================
-   TRIPS PAGE
-========================= */
-
-.trips-hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: #0b3c5d;
-  color: white;
-}
-
-.trip-cards {
-  max-width: 1200px;
-  margin: auto;
-  padding: 3rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.trip-card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.trips-table-section {
-  background: #f4f4f4;
-  padding: 3rem 1rem;
-}
-
-.trips-table {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  border-collapse: collapse;
-  background: white;
-}
-
-.trips-table th,
-.trips-table td {
-  border: 1px solid #ccc;
-  padding: 0.8rem;
-  text-align: center;
-}
-
-.trips-table th {
-  background: #0b3c5d;
-  color: white;
-}
-
-/* HERO */
-.home-hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-}
-
-.home-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    color: #fff;
-    font-size: 3rem;
-    background: rgba(0,0,0,0.5);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-}
-
-/* NEWSLETTER */
-.newsletter {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: #f2f7fb;
-}
-
-.newsletter-form {
+/* navigation */
+nav ul {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+    justify-content: space-around;
+    list-style: none;
 }
 
-.newsletter-form input,
-.newsletter-form button {
-    padding: 0.7rem;
-    font-size: 1rem;
-}
-
-/* CTA */
-.home-cta, .trips-cta {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: #0b4d6b;
-    color: #fff;
-}
-
-.cta-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background: #ffb703;
-    color: #000;
-    padding: 0.8rem 1.5rem;
+nav a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 6px;
 }
 
-/* HOME GRID */
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 3rem;
+/* headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-.grid-item img {
+/* spacing */
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
     width: 100%;
+    height: auto;
+}
+
+/* overlay heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(29, 53, 87, 0.8);
+    color: white;
+}
+
+/* overlay article */
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+/* article image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border: 2px solid white;
+}
+
+/* sections */
+section {
+    background-color: white;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
-/* TRIPS GRID */
-.trips-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 3rem;
-}
-
-.trip-card {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.trip-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* TABLE */
-.trips-table-section {
-    padding: 3rem;
-}
-
-.trips-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.trips-table th,
-.trips-table td {
-    border: 1px solid #ccc;
-    padding: 1rem;
+/* footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
 }
 
-.trips-table th {
-    background: #0b4d6b;
-    color: #fff;
+/* social icons */
+.socialmedia a {
+    text-decoration: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .home-grid,
-    .trips-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text {
-        font-size: 2rem;
-        left: 5%;
-        right: 5%;
-    }
+.socialmedia img {
+    width: 40px;
+    margin: 10px;
 }
