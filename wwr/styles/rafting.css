@@ -136,3 +136,10 @@ footer {
     width: 40px;
     margin: 10px;
 }
+nav {
+    background-color: var(--secondary-color);
+}
+
+.hero {
+    background-color: var(--accent1-color);
+}
