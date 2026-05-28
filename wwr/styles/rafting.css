@@ -68,23 +68,51 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-  position: relative;
+  position: relative; 
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .hero img {
   width: 100%;
   display: block;
+  height: auto;
 }
 
 .hero h1 {
-  position: absolute;
+  position: absolute; 
   top: 30px;
   left: 30px;
-  color: var(--background-color);
-  background: rgba(0,0,0,0.5);
-  padding: var(--spacing-sm);
+  color: var(--accent2-color);
+  background: rgba(0,0,0,0.6);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--heading-font);
+  z-index: 2;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  background: rgba(255,255,255,0.9);
+  color: var(--primary-color);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  font-family: var(--paragraph-font);
+  z-index: 2;
+}
+
+.hero article img {
+  float: right;
+  width: 150px;
+  margin-left: 20px;
+  margin-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  border-radius: 4px;
 }
 
 /* HISTORY / ADVENTURES sections */
