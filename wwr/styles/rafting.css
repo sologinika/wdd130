@@ -1,4 +1,13 @@
 
+:root {
+  /* Colors */
+  --primary-color: #2563eb;      /* main brand blue */
+  --accent-color: #f59e0b;       /* accent orange */
+  --bg-color: #f9fafb;           /* page background */
+  --text-color: #1f2937;         /* main text */
+  --border-color: #e5e7eb;       /* borders */
+  }
+  
 * {
     margin: 0;
     padding: 0;
