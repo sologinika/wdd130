@@ -1,13 +1,12 @@
-
+/* style.css - put this at the top */
 :root {
-    --primary-color: #1d3557;
-    --secondary-color: #457b9d;
-    --accent1-color: #a8dadc;
-    --accent2-color: #f1faee;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
+  --primary-color: #1a1a1a;
+  --secondary-color: #555;
+  --accent1-color: #ff6600;
+  --accent2-color: #ffffff;
+  --heading-font: 'Georgia', serif;
+  --paragraph-font: 'Arial', sans-serif;
 }
-
 
 * {
     margin: 0;
