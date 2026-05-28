@@ -1,13 +1,14 @@
 
 :root {
-  /* Colors */
-  --primary-color: #2563eb;      /* main brand blue */
-  --accent-color: #f59e0b;       /* accent orange */
-  --bg-color: #f9fafb;           /* page background */
-  --text-color: #1f2937;         /* main text */
-  --border-color: #e5e7eb;       /* borders */
-  }
-  
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent1-color: #a8dadc;
+    --accent2-color: #f1faee;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
