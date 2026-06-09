@@ -13,8 +13,7 @@
 <body>
 
     <header>
-            <img src="images/water-rafting.png" alt="Solo Rafting Adventure" class="logo">
-
+        <img src="images/water-rafting.png" alt="Solo Rafting Adventure" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,19 +25,19 @@
     </header>
 
     <main>
+        <!-- 1. Exactly one h1 inside main, must include company name -->
+        <h1>Contact Solo Rafting Adventure</h1>
 
-     <section class="contact-heading">
-            <h1>Contact Us</h1>
+        <section class="contact-heading">
             <p>We would love to hear from you! Contact us with questions, reservations, or suggestions.</p>
         </section>
 
-     <section class="contact-info">
+        <section class="contact-info">
             <div class="company-info">
                 <h2>Company Information</h2>
-
                 <p><strong>Address:</strong><br>
                 123 Wedtheral Road Owerri<br>
-                P.O Box,  83440</p>
+                P.O Box, 83440</p>
 
                 <p><strong>Phone:</strong><br>
                 (234) 8099776655<br>
@@ -50,88 +49,89 @@
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63545.249133717894!2d6.9770601906120175!3d5.4807759830195195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042599d25620855%3A0x3df49e1d3b9f730d!2sOwerri%20Municipal%2C%20Imo!5e0!3m2!1sen!2sng!4v1780538607674!5m2!1sen!2sng" width="400" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63545.249133717894!2d6.9770601906120175!3d5.4807759830195195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042599d25620855%3A0x3df49e1d3b9f730d!2sOwerri%20Municipal%2C%20Imo!5e0!3m2!1sen!2sng!4v1780538607674!5m2!1sen!2sng" 
+                    width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
         <section class="employees">
             <h2>Meet Our Team</h2>
-
             <div class="employee-gallery">
-
                 <figure>
                     <img src="images/ceo.jpg" alt="David Johnson">
                     <figcaption>David Johnson - General Manager of Solo Rafting Adventure</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/staff1.jpg" alt="Michael Brown">
                     <figcaption>Michael Brown - Lead River Guide</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/staff2.jpg" alt="Emily Davis">
                     <figcaption>Emily Davis - Reservation Specialist</figcaption>
                 </figure>
-
             </div>
         </section>
-<main> 
-        <section class="contact-form-section">
-            <section class="contact-form-section">
-  <h2>Send Us a Message</h2>
-  <form action="#" method="post">
-    <div class="form-item">
-      <label for="fullname">Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
-    </div>
-    <div class="form-item">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <fieldset>
-      <legend>Purpose of Message</legend>
-      <label for="purpose-general">
-        <input type="radio" id="purpose-general" name="purpose" value="general" required>
-        General Inquiry
-      </label>
-      <label for="purpose-reservation">
-        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-        Reservation Question
-      </label>
-      <label for="purpose-suggestion">
-        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-        Website Suggestion
-      </label>
-    </fieldset>
-    <div class="form-item">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <div class="form-item">
-      <label for="newsletter">
-        <input type="checkbox" id="newsletter" name="newsletter">
-        Subscribe to our monthly newsletter
-      </label>
-    </div>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
 
-    </main>
+        <!-- 2. Exactly one form inside main -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="#" method="post">
+                
+                <div class="form-item">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+                    <br>
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <br>
+                    <label for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Subscribe to our monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+    </main> <!-- Only one closing main tag -->
 
     <footer>
         <p>© 2026 White Water Rafting | Solomon Ginikachukwu</p>
-
         <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon">
             </a>
-
             <a href="https://linkedin.com">
                 <img src="images/linkedin.svg" alt="LinkedIn Icon">
             </a>
-
             <a href="https://instagram.com">
                 <img src="images/instagram.svg" alt="Instagram Icon">
             </a>
